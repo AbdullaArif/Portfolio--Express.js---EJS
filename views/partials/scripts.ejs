@@ -1,0 +1,55 @@
+<script src="/js/main.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+<script>
+  function openURL() {
+    var url = "/assets/Vinod's Resume.pdf";
+    window.open(url, "_blank");
+  }
+</script>
+
+<script>
+  const cursorInner = document.getElementById("cursor-inner");
+  const cursorOuter = document.getElementById("cursor-outer");
+  const links = document.querySelectorAll("a,label,button");
+
+  document.addEventListener("mousemove", function (e) {
+    const posX = e.clientX;
+    const posY = e.clientY;
+
+    cursorInner.style.left = `${posX}px`;
+    cursorInner.style.top = `${posY}px`;
+
+    cursorOuter.animate(
+      {
+        left: `${posX}px`,
+        top: `${posY}px`,
+      },
+      { duration: 500, fill: "forwards" }
+    );
+
+    links.forEach((link) => {
+      link.addEventListener("mouseenter", () => {
+        cursorInner.classList.add("hover");
+        cursorOuter.classList.add("hover");
+      });
+      link.addEventListener("mouseleave", () => {
+        cursorInner.classList.remove("hover");
+        cursorOuter.classList.remove("hover");
+      });
+    });
+  });
+</script>
+
+<script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
+<script>
+  kofiWidgetOverlay.draw('vinodjangid07', {
+    'type': 'floating-chat',
+    'floating-chat.donateButton.text': 'Support me',
+    'floating-chat.donateButton.background-color': '#794bc4',
+    'floating-chat.donateButton.text-color': '#fff'
+  });
+</script>
