@@ -1543,6 +1543,83 @@ footer {
 
 /* Burada work experience  hissesi bitir */
 
+/*  bura aboutdaki sekiller ucundur*/
+/* .dp-section {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dp-images {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.dp-images img {
+  width: 200px; /* istəyə uyğun dəyişə bilərsən */
+  /* border-radius: 15px;
+  box-shadow: 0 0 15px rgba(128, 0, 255, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.dp-images img:hover {
+  transform: scale(1.05);
+} */ 
+
+
+
+.dp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+}
+
+.dp img {
+  width: 295px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.info-dp-section {
+  display: flex;
+  flex-direction: row;
+  margin-top: 30px;
+  gap: 30px;
+  width: 100%;
+}
+
+.about-info {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.dp {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .dp img {
+    width: 100%; /* mobil cihazlarda daha geniş göstər */
+  }
+}
+
+
+/*  bura aboutdaki sekiller ucundur bitir*/
+
+
+
 .getintouch-heading {
     align-items: center;
     justify-content: center
